@@ -25,6 +25,7 @@ func (c *Cron) Run() {
 					c.cronList[key].LastStart = time.Now()
 				}
 			}
+			time.Sleep(time.Millisecond * 200)
 		}
 	}()
 }
